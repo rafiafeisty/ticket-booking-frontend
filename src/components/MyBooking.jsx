@@ -13,7 +13,7 @@ const MyBooking = () => {
         if (!user) return; // wait for user
         const fetchingdata = async () => {
             const userID = user.id;
-            const data = await fetch(`https://ticket-booking-backend-two.vercel.app/booking?userId=${userID}`);
+            const data = await fetch(`https://ticket-booking-backend-flame.vercel.app/booking?userId=${userID}`);
             const response = await data.json();
             setbooking(response.exist || []);
         };

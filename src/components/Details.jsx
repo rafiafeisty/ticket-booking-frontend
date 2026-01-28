@@ -33,9 +33,9 @@ const Details = () => {
     const fetchData = async () => {
       try {
         const [castRes, timeRes, movieRes] = await Promise.all([
-          fetch("https://ticket-booking-backend-two.vercel.app/cast"),
-          fetch("https://ticket-booking-backend-two.vercel.app/time"),
-          fetch("https://ticket-booking-backend-two.vercel.app/movie")
+          fetch("https://ticket-booking-backend-flame.vercel.app/cast"),
+          fetch("https://ticket-booking-backend-flame.vercel.app/time"),
+          fetch("https://ticket-booking-backend-flame.vercel.app/movie")
         ]);
 
         const castData = await castRes.json();

@@ -10,7 +10,7 @@ const Moviepage = () => {
 
   useEffect(() => {
     const fetchdata = async () => {
-      const data = await fetch("https://ticket-booking-backend-two.vercel.app/movie")
+      const data = await fetch("https://ticket-booking-backend-flame.vercel.app/movie")
       const response = await data.json()
       setmovie(response.data)
     };

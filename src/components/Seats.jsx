@@ -34,7 +34,7 @@ const Seats = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetch("http://localhost:5000/show");
+        const data = await fetch("https://ticket-booking-backend-flame.vercel.app/show");
         const response = await data.json();
         setShow(response.data);
       } catch (error) {
@@ -93,7 +93,7 @@ const Seats = () => {
     try {
       localStorage.setItem("pendingBooking", JSON.stringify(payload));
 
-      const response = await fetch("https://ticket-booking-backend-two.vercel.app/create-checkout-session", {
+      const response = await fetch("https://ticket-booking-backend-flame.vercel.app/create-checkout-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
