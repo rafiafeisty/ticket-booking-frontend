@@ -19,7 +19,7 @@ const Header2 = () => {
 
       <nav className="hidden md:flex mt-5 space-x-8 backdrop-blur border border-gray-30/20 bg-black/70 bg-white/10 px-8 py-3 rounded-full">
         <Link to="/" className="hover:text-gray-300">Home</Link>
-        <Link to="/movies" className="hover:text-gray-300">Movie</Link>
+        <Link to="/moviespage" className="hover:text-gray-300">Movie</Link>
         <Link to="/" className="hover:text-gray-300">Theatre</Link>
         <Link to="/" className="hover:text-gray-300">Releases</Link>
         <Link to="/mybooking" className="hover:text-gray-300">Bookings</Link>
