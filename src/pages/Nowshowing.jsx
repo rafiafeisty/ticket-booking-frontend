@@ -8,7 +8,7 @@ const Nowshowing = () => {
   const [movie, setmovie] = useState([])
   useEffect(() => {
     const fetchdata = async () => {
-      const data = await fetch("http://localhost:5000/movie")
+      const data = await fetch("https://ticket-booking-backend-two.vercel.app/movie")
       const response = await data.json()
       setmovie(response.data)
     };
