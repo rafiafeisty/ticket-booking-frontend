@@ -3,6 +3,7 @@ import logo from '../assets/logo.svg';
 import { Menu, TicketPlus, X } from 'lucide-react';
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,11 @@ const Header2 = () => {
       </div>
 
       <nav className="hidden md:flex mt-5 space-x-8 backdrop-blur border border-gray-30/20 bg-black/70 bg-white/10 px-8 py-3 rounded-full">
-        <a href="/" className="hover:text-gray-300">Home</a>
-        <a href="/movies" className="hover:text-gray-300">Movie</a>
-        <a href="/" className="hover:text-gray-300">Theatre</a>
-        <a href="/" className="hover:text-gray-300">Releases</a>
-        <a href="/mybooking" className="hover:text-gray-300">Bookings</a>
+        <Link to="/" className="hover:text-gray-300">Home</Link>
+        <Link to="/movies" className="hover:text-gray-300">Movie</Link>
+        <Link to="/" className="hover:text-gray-300">Theatre</Link>
+        <Link to="/" className="hover:text-gray-300">Releases</Link>
+        <Link to="/mybooking" className="hover:text-gray-300">Bookings</Link>
       </nav>
 
       <div className="flex items-center space-x-5">
@@ -42,10 +43,10 @@ const Header2 = () => {
       </div>
       {isMenuOpen && (
         <div className="absolute top-20 left-0 w-full bg-black/90 backdrop-blur-lg border-t border-gray-700 py-6 flex flex-col items-center space-y-6 md:hidden">
-          <a href="/" className="hover:text-gray-300 text-white">Home</a>
-          <a href="/moviespage" className="hover:text-gray-300 text-white">Movie</a>
-          <a href="/" className="hover:text-gray-300 text-white">Theatre</a>
-          <a href="/" className="hover:text-gray-300 text-white">Releases</a>
+          <Link to="/" className="hover:text-gray-300 text-white">Home</Link>
+          <Link to="/moviespage" className="hover:text-gray-300 text-white">Movie</Link>
+          <Link to="/" className="hover:text-gray-300 text-white">Theatre</Link>
+          <Link to="/" className="hover:text-gray-300 text-white">Releases</Link>
           <button className="bg-[#f84565] hover:bg-[#e43e5e] rounded-full py-2 px-6 text-white font-medium">
             Login
           </button>

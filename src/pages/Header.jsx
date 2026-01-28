@@ -4,6 +4,7 @@ import { Menu, TicketPlus, X } from 'lucide-react';
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,10 @@ const Header = () => {
         data-aos="fade-down"
         data-aos-delay="200"
       >
-        <a href="/" className="hover:text-gray-300">Home</a>
-        <a href="/moviespage" className="hover:text-gray-300">Movie</a>
-        <a href="/" className="hover:text-gray-300">Theatre</a>
-        <a href="/" className="hover:text-gray-300">Releases</a>
+        <Link to="/" className="hover:text-gray-300">Home</Link>
+        <Link to="/moviespage" className="hover:text-gray-300">Movie</Link>
+        <Link to="/" className="hover:text-gray-300">Theatre</Link>
+        <Link to="/" className="hover:text-gray-300">Releases</Link>
       </nav>
 
       <div className="flex items-center space-x-5" data-aos="fade-left" data-aos-delay="300">
@@ -63,10 +64,10 @@ const Header = () => {
           className="absolute top-20 left-0 w-full bg-black/90 backdrop-blur-lg border-t border-gray-700 py-6 flex flex-col items-center space-y-6 md:hidden"
           data-aos="fade-up"
         >
-          <a href="/" className="hover:text-gray-300 text-white">Home</a>
-          <a href="/movies" className="hover:text-gray-300 text-white">Movie</a>
-          <a href="/" className="hover:text-gray-300 text-white">Theatre</a>
-          <a href="/" className="hover:text-gray-300 text-white">Releases</a>
+          <Link to="/" className="hover:text-gray-300 text-white">Home</Link>
+          <Link to="/moviespage" className="hover:text-gray-300 text-white">Movie</Link>
+          <Link to="/" className="hover:text-gray-300 text-white">Theatre</Link>
+          <Link to="/" className="hover:text-gray-300 text-white">Releases</Link>
           
           <button
             onClick={openSignIn}
