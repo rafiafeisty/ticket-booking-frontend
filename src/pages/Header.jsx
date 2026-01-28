@@ -33,7 +33,7 @@ const Header = () => {
         data-aos-delay="200"
       >
         <a href="/" className="hover:text-gray-300">Home</a>
-        <a href="/movies" className="hover:text-gray-300">Movie</a>
+        <a href="/moviespage" className="hover:text-gray-300">Movie</a>
         <a href="/" className="hover:text-gray-300">Theatre</a>
         <a href="/" className="hover:text-gray-300">Releases</a>
       </nav>
